@@ -13,9 +13,15 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@radix-ui/colors": "^0.1.8",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@vanilla-extract/css": "^1.7.2",
+    "@vanilla-extract/recipes": "^0.2.5",
+    "@vanilla-extract/sprinkles": "^1.4.1",
+    "@vanilla-extract/vite-plugin": "^3.2.1",
     "@vitejs/plugin-react": "^2.0.0",
+    "polished": "^4.2.2",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
   }
