@@ -1,25 +1,58 @@
-import {themeClass, vars} from './modules/theme'
+import {Button} from './ui/Button'
+import {Stack} from './ui/Stack/Stack'
+import {Text} from './ui/Text'
+import {lightThemeClass} from './ui/theme'
 
 export function App() {
   return (
-    <div className={themeClass}>
-      <button>btn solid|neutral|medium</button>
-      <button>btn solid|neutral|small</button>
-      <button>btn solid|neutral|large</button>
+    <div className={lightThemeClass}>
+      <Stack>
+        <Button variants={{size: 'small'}}>btn solid|neutral|small</Button>
+        <Button>btn solid|neutral|medium</Button>
+        <Button variants={{size: 'large'}}>btn solid|neutral|large</Button>
 
-      <button style={{backgroundColor: vars.color.blue1}}>
-        btn solid|brand|medium
-      </button>
-      <button>btn solid|brand|small</button>
-      <button>btn solid|brand|large</button>
+        <Button variants={{tone: 'brand', size: 'small'}}>
+          btn solid|brand|small
+        </Button>
+        <Button variants={{tone: 'brand'}}>btn solid|brand|medium</Button>
+        <Button variants={{tone: 'brand', size: 'large'}}>
+          btn solid|brand|large
+        </Button>
 
-      <button>btn ghost|neutral|medium</button>
-      <button>btn ghost|neutral|small</button>
-      <button>btn ghost|neutral|large</button>
+        <Button variants={{type: 'ghost', size: 'small'}}>
+          btn ghost|neutral|small
+        </Button>
+        <Button variants={{type: 'ghost'}}>btn ghost|neutral|medium</Button>
+        <Button variants={{type: 'ghost', size: 'large'}}>
+          btn ghost|neutral|large
+        </Button>
 
-      <button>btn ghost|brand|medium</button>
-      <button>btn ghost|brand|small</button>
-      <button>btn ghost|brand|large</button>
+        <Button variants={{type: 'ghost', tone: 'brand', size: 'small'}}>
+          btn ghost|brand|small
+        </Button>
+        <Button variants={{type: 'ghost', tone: 'brand'}}>
+          btn ghost|brand|medium
+        </Button>
+        <Button variants={{type: 'ghost', tone: 'brand', size: 'large'}}>
+          btn ghost|brand|large
+        </Button>
+      </Stack>
+
+      <hr />
+
+      <Stack>
+        <Text>text neutral|medium</Text>
+        <Text>text neutral|small</Text>
+
+        <Text>text secondary|medium</Text>
+        <Text>text secondary|small</Text>
+
+        <Text>text strong|medium</Text>
+        <Text>text strong|small</Text>
+
+        <Text>text link|medium</Text>
+        <Text>text link|small</Text>
+      </Stack>
     </div>
   )
 }
